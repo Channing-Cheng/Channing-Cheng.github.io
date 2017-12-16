@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Just Notes</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://channing-cheng.github.io/"/>
+  <updated>2017-12-16T09:51:44.611Z</updated>
+  <id>http://channing-cheng.github.io/</id>
+  
+  <author>
+    <name>Xi Cheng</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Learning of &lt;You Can Draw in 30 Days&gt;</title>
+    <link href="http://channing-cheng.github.io/2017/12/16/drawingIn30Days/"/>
+    <id>http://channing-cheng.github.io/2017/12/16/drawingIn30Days/</id>
+    <published>2017-12-16T09:00:30.000Z</published>
+    <updated>2017-12-16T09:51:44.611Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Day-1&quot;&gt;&lt;a href=&quot;#Day-1&quot; class=&quot;headerlink&quot; title=&quot;Day 1&quot;&gt;&lt;/a&gt;Day 1&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;day1.jpeg&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Drawing" scheme="http://channing-cheng.github.io/tags/Drawing/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Swift - Optional</title>
+    <link href="http://channing-cheng.github.io/2017/12/14/swift1/"/>
+    <id>http://channing-cheng.github.io/2017/12/14/swift1/</id>
+    <published>2017-12-14T06:02:44.000Z</published>
+    <updated>2017-12-15T05:39:12.686Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Optional&quot;&gt;&lt;a href=&quot;#Optional&quot; class=&quot;headerlink&quot; title=&quot;Optional&quot;&gt;&lt;/a&gt;Optional&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;The question mark (?) at the end
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Swift" scheme="http://channing-cheng.github.io/tags/Swift/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Markdown Syntax</title>
+    <link href="http://channing-cheng.github.io/2017/12/14/markdown/"/>
+    <id>http://channing-cheng.github.io/2017/12/14/markdown/</id>
+    <published>2017-12-14T03:11:00.000Z</published>
+    <updated>2017-12-15T05:54:37.026Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Basic-Syntax&quot;&gt;&lt;a href=&quot;#Basic-Syntax&quot; class=&quot;headerlink&quot; title=&quot;Basic Syntax&quot;&gt;&lt;/a&gt;Basic Syntax&lt;/h2&gt;&lt;h3 id=&quot;Emphasis&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Markdown" scheme="http://channing-cheng.github.io/tags/Markdown/"/>
+    
+  </entry>
+  
+</feed>
