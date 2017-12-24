@@ -1,0 +1,55 @@
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="Xi Cheng's blogs"><title>Angularjs Learning | Just Notes</title><link rel="stylesheet" type="text/css" href="//fonts.css.network/css?family=Source+Code+Pro"><link rel="stylesheet" type="text/css" href="/css/style.css?v=2.0.1"><link rel="stylesheet" type="text/css" href="/css/highlight.css?v=2.0.1"><link rel="Shortcut Icon" href="/favicon.ico"><link rel="bookmark" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">Angularjs Learning</h1><a id="logo" href="/.">Just Notes</a><p class="description"></p></div><div id="nav-menu"><a href="/." class="current"><i class="fa fa-home"> Home</i></a><a href="/archives/"><i class="fa fa-archive"> Archive</i></a><a href="/about/"><i class="fa fa-user"> About</i></a><a href="/atom.xml"><i class="fa fa-rss"> RSS</i></a></div></div><div id="layout" class="layout-g"><div class="layout-l"><div class="content_container"><div class="post"><h1 class="post-title">Angularjs Learning</h1><div class="post-meta"><a href="/2017/12/18/angularjs/#comments" class="comment-count"><i data-disqus-identifier="2017/12/18/angularjs/" class="disqus-comment-count"></i>Guestbook</a><p><span class="date">Dec 18, 2017</span><span><i id="busuanzi_container_page_pv"><i id="busuanzi_value_page_pv"></i><i>Hits</i></i></span></p></div><div class="post-content"><h2 id="watch-digest-apply"><a href="#watch-digest-apply" class="headerlink" title="watch, digest, apply"></a>watch, digest, apply</h2><ol>
+<li><code>$scope.$watch()</code> creates a watch of variable, takes 2 parameters<ul>
+<li>value function</li>
+<li>listener function</li>
+</ul>
+</li>
+<li><p><code>$scope.digest()</code> iterates through all the watches in the <code>$scope</code> object and its child objects, When <code>$digest()</code> iterates over the watches, it calls the value function for each watch. If the value returned by the value function is different than the value it returned the last time it was called, the listener function for that watch is called.   </p>
+</li>
+<li><p><code>$scope.apply()</code> takes a function as parameter which is executed, and after that <code>$scope.$digest()</code> is called internally.</p>
+</li>
+</ol>
+<h2 id="Value-Constant-Factory-Service-Provider"><a href="#Value-Constant-Factory-Service-Provider" class="headerlink" title="Value/Constant/Factory/Service/Provider"></a>Value/Constant/Factory/Service/Provider</h2><ol>
+<li><code>module.config()</code> cannot inject <code>Value</code>, but <code>Constant</code></li>
+<li><code>Factory</code> is function creates values, <code>Service</code> is an js object</li>
+<li><code>Provider</code><ul>
+<li>it contains a single <code>$get()</code> function. This is the <code>Factory</code> function of the provider. </li>
+<li>using <code>module.config()</code> by calling method inside <code>Provider</code></li>
+</ul>
+</li>
+</ol>
+<h2 id="Custom-Directive"><a href="#Custom-Directive" class="headerlink" title="Custom Directive"></a>Custom Directive</h2><ol>
+<li><p>compile, link, controller</p>
+<ul>
+<li><code>compile</code> should be used when you need modify directive template, it runs once and return a <code>link</code></li>
+<li><code>link</code> is the function which used when you need to attach event handler, modify DOM.</li>
+<li><code>controller</code> is used when you need to share or reuse $scope data</li>
+</ul>
+</li>
+<li><p>Transclusion</p>
+<ul>
+<li>Wraps Elements, set <code>transclude: true</code></li>
+<li>using <code>ng-transclude</code> as a attribute on the tag</li>
+</ul>
+</li>
+<li><p>isolating scope binding style</p>
+<ul>
+<li>‘@’: one way to binding with double <code>{}</code></li>
+<li>‘=’: two way</li>
+<li>‘&gt;’: one way</li>
+<li>‘&amp;’: often used for callback function<blockquote>
+<p>using <code>scope.func()(para1, para2)</code> to pass parameters to parent scope function</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ol>
+</div><div class="tags"><a href="/tags/Angularjs/">Angularjs</a></div><div class="post-share"></div><div class="post-nav"><a href="/2017/12/20/ios/" class="pre">ios</a><a href="/2017/12/18/vimShortcut/" class="next">Vim shortcut</a></div><div id="comments"><div id="disqus_thread"></div></div></div></div></div><div class="layout-r"><div id="sidebar"><div class="widget"><div class="widget-title"><i class="fa fa-xie"> Recent</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/12/20/ios/">ios</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/12/18/angularjs/">Angularjs Learning</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/12/18/vimShortcut/">Vim shortcut</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/12/16/drawingIn30Days/">Process of learning <You Can Draw in 30 Days> by 'Mark Kistler'</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/12/14/swift/">Swift Learning</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/12/14/markdown/">Markdown Syntax</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-biao"> Tags</i></div><div class="tagcloud"><a href="/tags/Drawing/" style="font-size: 15px;">Drawing</a> <a href="/tags/Markdown/" style="font-size: 15px;">Markdown</a> <a href="/tags/Vim/" style="font-size: 15px;">Vim</a> <a href="/tags/Swift/" style="font-size: 15px;">Swift</a> <a href="/tags/Angularjs/" style="font-size: 15px;">Angularjs</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-archive"> Archive</i></div><ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-you"> Blogroll</i></div><ul></ul><a href="null" title="null" target="_blank"></a><ul></ul><a href="null" title="null" target="_blank"></a><ul></ul><a href="null" title="null" target="_blank"></a></div></div></div></div><a id="totop" href="#top"></a><div id="footer"><div class="footer-info"><p><a href="/baidusitemap.xml">Baidu Site Haritası</a> |  <a href="/atom.xml">RSS</a> |  <a href="/about/">About</a></p><p>本站总访问量：<i id="busuanzi_container_site_pv"><i id="busuanzi_value_site_pv"></i></i>次</p><p><span> Copyright &copy;<a href="/." rel="nofollow">Xi Cheng.</a></span><span> Theme by<a rel="nofollow" target="_blank" href="https://github.com/chaooo/hexo-theme-BlueLake"> BlueLake.</a></span><span> Count by<a href="http://busuanzi.ibruce.info/"> busuanzi.</a></span><span> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a></span></p></div></div></div><script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" async></script><script type="text/javascript" src="/js/toctotop.js?v=2.0.1" async></script><script>var disqus_shortname = 'xi-cheng';
+var disqus_identifier = '2017/12/18/angularjs/';
+var disqus_title = 'Angularjs Learning';
+var disqus_url = 'http://channing-cheng.github.io/2017/12/18/angularjs/';
+(function() {
+  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//xi-cheng.disqus.com/count.js" async></script><script type="text/javascript" src="//xi-cheng.disqus.com/recent_comments_widget.js?num_items=5&amp;hide_avatars=1&amp;avatar_size=32&amp;excerpt_length=20&amp;hide_mods=1"></script></body></html>
