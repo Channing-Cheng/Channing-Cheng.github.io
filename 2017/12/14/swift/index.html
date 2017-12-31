@@ -35,14 +35,56 @@
 <h2 id="Function"><a href="#Function" class="headerlink" title="Function"></a>Function</h2><ol>
 <li>Function parameters are constants by default. If you want a function to modify a parameter’s value, and you want those changes to persist after the function call has ended, define that parameter as an in-out parameter instead. such as <code>func swapTwoInts(_ a: inout Int, _ b: inout Int)</code></li>
 </ol>
-<!--
-## Property
-
-1. Stored Properties 
-    > optional with `willSet` and `DidSet` 
-2. Computed Properties
-    > with `getter` and `setter`
---></div><div class="tags"><a href="/tags/Swift/">Swift</a></div><div class="post-share"></div><div class="post-nav"><a href="/2017/12/16/drawingIn30Days/" class="pre">Process of learning &lt;You Can Draw in 30 Days&gt; by 'Mark Kistler'</a><a href="/2017/12/14/markdown/" class="next">Markdown Syntax</a></div><div id="comments"><div id="disqus_thread"></div></div></div></div></div><div class="layout-r"><div id="sidebar"><div class="widget"><div class="widget-title"><i class="fa fa-xie"> Recent</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/12/20/ios/">ios</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/12/18/angularjs/">Angularjs Learning</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/12/18/vimShortcut/">Vim shortcut</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/12/16/drawingIn30Days/">Process of learning <You Can Draw in 30 Days> by 'Mark Kistler'</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/12/14/swift/">Swift Learning</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/12/14/markdown/">Markdown Syntax</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-biao"> Tags</i></div><div class="tagcloud"><a href="/tags/Drawing/" style="font-size: 15px;">Drawing</a> <a href="/tags/Markdown/" style="font-size: 15px;">Markdown</a> <a href="/tags/Vim/" style="font-size: 15px;">Vim</a> <a href="/tags/Swift/" style="font-size: 15px;">Swift</a> <a href="/tags/Angularjs/" style="font-size: 15px;">Angularjs</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-archive"> Archive</i></div><ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-you"> Blogroll</i></div><ul></ul><a href="null" title="null" target="_blank"></a><ul></ul><a href="null" title="null" target="_blank"></a><ul></ul><a href="null" title="null" target="_blank"></a></div></div></div></div><a id="totop" href="#top"></a><div id="footer"><div class="footer-info"><p><a href="/baidusitemap.xml">Baidu Site Haritası</a> |  <a href="/atom.xml">RSS</a> |  <a href="/about/">About</a></p><p>本站总访问量：<i id="busuanzi_container_site_pv"><i id="busuanzi_value_site_pv"></i></i>次</p><p><span> Copyright &copy;<a href="/." rel="nofollow">Xi Cheng.</a></span><span> Theme by<a rel="nofollow" target="_blank" href="https://github.com/chaooo/hexo-theme-BlueLake"> BlueLake.</a></span><span> Count by<a href="http://busuanzi.ibruce.info/"> busuanzi.</a></span><span> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a></span></p></div></div></div><script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" async></script><script type="text/javascript" src="/js/toctotop.js?v=2.0.1" async></script><script>var disqus_shortname = 'xi-cheng';
+<h2 id="Initialization"><a href="#Initialization" class="headerlink" title="Initialization"></a>Initialization</h2><ol>
+<li><p>Two-Phase Initialization</p>
+<ul>
+<li>1st: each stored property is assigned an initial value by the class that introduced it, subclass need init its own value first, then call <code>super.init</code></li>
+<li>2nd: class is given the opportunity to customize its stored properties, <code>self</code> can be used after <code>super.init</code></li>
+</ul>
+</li>
+<li><p>designated vs Convenience initializers</p>
+<ul>
+<li>A designated initializer must call a designated initializer from its immediate superclass.</li>
+<li>A convenience initializer must call another initializer from the same class.</li>
+<li>A convenience initializer must ultimately call a designated initializer. (call a chain of another Convenience Initializer, but at last should call the Designated Initializer)</li>
+</ul>
+</li>
+<li><p>Failable Initializers</p>
+<ul>
+<li>using <code>init?</code> creates an optional instance(can be nil, type is optional)</li>
+<li>call from subclass using <code>super.init</code> without <code>?</code></li>
+</ul>
+</li>
+</ol>
+<h2 id="Property"><a href="#Property" class="headerlink" title="Property"></a>Property</h2><ol>
+<li><p>Stored Properties</p>
+</li>
+<li><p>Computed Properties</p>
+<ul>
+<li>with <code>getter</code> and <code>setter</code></li>
+</ul>
+</li>
+<li><p>Property Observers</p>
+<ul>
+<li>can add property observers to any stored properties you define, except for lazy stored properties</li>
+<li>can add property observers to any inherited property (whether stored or computed) by overriding the property within a subclass.</li>
+<li>don’t need to define property observers for nonoverridden computed properties, because you can observe and respond to changes to their value in the computed property’s setter.</li>
+<li>with <code>willSet</code> and <code>didSet</code></li>
+</ul>
+</li>
+<li><p>Lazy Properties</p>
+<ul>
+<li>A <code>lazy</code> stored property is a property whose initial value is not calculated until the first time it is used</li>
+<li>using closure or function to initialize the lazy property.</li>
+</ul>
+</li>
+<li><p>Type Properties</p>
+<ul>
+<li><code>static</code> belongs to type itself</li>
+</ul>
+</li>
+</ol>
+</div><div class="tags"><a href="/tags/Swift/">Swift</a></div><div class="post-share"></div><div class="post-nav"><a href="/2017/12/16/drawingIn30Days/" class="pre">Process of learning &lt;You Can Draw in 30 Days&gt; by 'Mark Kistler'</a><a href="/2017/12/14/markdown/" class="next">Markdown Syntax</a></div><div id="comments"><div id="disqus_thread"></div></div></div></div></div><div class="layout-r"><div id="sidebar"><div class="widget"><div class="widget-title"><i class="fa fa-xie"> Recent</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/12/27/jsSugar/">JavaScript Syntax Sugar</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/12/20/ios/">ios learning</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/12/18/angularjs/">Angularjs Learning</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/12/18/vimShortcut/">Vim shortcut</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/12/16/drawingIn30Days/">Process of learning <You Can Draw in 30 Days> by 'Mark Kistler'</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/12/14/swift/">Swift Learning</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/12/14/markdown/">Markdown Syntax</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-biao"> Tags</i></div><div class="tagcloud"><a href="/tags/Angularjs/" style="font-size: 15px;">Angularjs</a> <a href="/tags/Drawing/" style="font-size: 15px;">Drawing</a> <a href="/tags/ios/" style="font-size: 15px;">ios</a> <a href="/tags/JavaScript/" style="font-size: 15px;">JavaScript</a> <a href="/tags/Markdown/" style="font-size: 15px;">Markdown</a> <a href="/tags/Swift/" style="font-size: 15px;">Swift</a> <a href="/tags/Vim/" style="font-size: 15px;">Vim</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-archive"> Archive</i></div><ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-you"> Blogroll</i></div><ul></ul><a href="null" title="null" target="_blank"></a><ul></ul><a href="null" title="null" target="_blank"></a><ul></ul><a href="null" title="null" target="_blank"></a></div></div></div></div><a id="totop" href="#top"></a><div id="footer"><div class="footer-info"><p><a href="/baidusitemap.xml">Baidu Site Haritası</a> |  <a href="/atom.xml">RSS</a> |  <a href="/about/">About</a></p><p>本站总访问量：<i id="busuanzi_container_site_pv"><i id="busuanzi_value_site_pv"></i></i>次</p><p><span> Copyright &copy;<a href="/." rel="nofollow">Xi Cheng.</a></span><span> Theme by<a rel="nofollow" target="_blank" href="https://github.com/chaooo/hexo-theme-BlueLake"> BlueLake.</a></span><span> Count by<a href="http://busuanzi.ibruce.info/"> busuanzi.</a></span><span> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a></span></p></div></div></div><script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" async></script><script type="text/javascript" src="/js/toctotop.js?v=2.0.1" async></script><script>var disqus_shortname = 'xi-cheng';
 var disqus_identifier = '2017/12/14/swift/';
 var disqus_title = 'Swift Learning';
 var disqus_url = 'http://channing-cheng.github.io/2017/12/14/swift/';
