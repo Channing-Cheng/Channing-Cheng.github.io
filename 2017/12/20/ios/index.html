@@ -19,9 +19,64 @@
 <h2 id="Tag"><a href="#Tag" class="headerlink" title="Tag"></a>Tag</h2><blockquote>
 <p>An integer that you can use to identify view objects in your application. The default value is 0</p>
 </blockquote>
+<h2 id="AutoSize"><a href="#AutoSize" class="headerlink" title="AutoSize"></a>AutoSize</h2><ol>
+<li>relation between the view and its supview, not define subviews relationship</li>
+<li>For width/height, set means flexible, unset means fixed.</li>
+<li>For margin, set means fixed, unset means flexible</li>
+</ol>
+<h2 id="Intrinsic-content-size"><a href="#Intrinsic-content-size" class="headerlink" title="Intrinsic content size"></a>Intrinsic content size</h2></li>
+<li><p>the size that will exactly fit a view’s content</p>
+</li>
+<li>content hugging: higher priority, don’t grow</li>
+<li><p>compress resistance: higher priority, don’t shrink</p>
+<h2 id="Stack-view"><a href="#Stack-view" class="headerlink" title="Stack view"></a>Stack view</h2><ol>
+<li>non-render view, means size, constrain defined by subviews.</li>
+<li>shift+right click to select the view hierarchy in storyboard.</li>
+<li>Type: horizontal/vertical</li>
+<li>Spacing: minimum space between subviews.</li>
+<li>alignment: perpendicular relation to its axis</li>
+</ol>
+<ul>
+<li>fill<ul>
+<li>max intrinsic content size define the stack size, another will fill full entire stack view</li>
+</ul>
+</li>
+<li>horizontal: leading, center, tailing / vertical: top, center, bottom <ul>
+<li>using intrinsic content width/height to determine the size</li>
+</ul>
+</li>
+<li>First/Last baseline</li>
+</ul>
+<ol>
+<li>Distribution: position along the axis</li>
+</ol>
+<ul>
+<li>fill <ul>
+<li>using intrinsic content size, grow or shrink one view (depend on hugging or resistance, if tie, resize the first one)</li>
+</ul>
+</li>
+<li>fill equally <ul>
+<li>using only one intrinsic content size, all the same size of other subviews</li>
+</ul>
+</li>
+<li>fill proportionally <ul>
+<li>starting intrinsic content size, grow or shrink views in proportion to their intrinsic content size</li>
+</ul>
+</li>
+<li>equal spacing<ul>
+<li>starting intrinsic content size </li>
+<li>if there are extra space, split equally between views</li>
+<li>if smaller than needed, using <code>space</code> property to keep minimum space, shrink one views based on resistance priority</li>
+</ul>
+</li>
+<li>equal centering<ul>
+<li>similar to last one, space is based on subviews center.</li>
+</ul>
 </li>
 </ul>
-</div><div class="tags"><a href="/tags/ios/">ios</a></div><div class="post-share"></div><div class="post-nav"><a href="/2017/12/27/jsSugar/" class="pre">JavaScript Syntax Sugar</a><a href="/2017/12/18/angularjs/" class="next">Angularjs Learning</a></div><div id="comments"><div id="disqus_thread"></div></div></div></div></div><div class="layout-r"><div id="sidebar"><div class="widget"><div class="widget-title"><i class="fa fa-xie"> Recent</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/12/27/jsSugar/">JavaScript Syntax Sugar</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/12/20/ios/">ios learning</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/12/18/angularjs/">Angularjs Learning</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/12/18/vimShortcut/">Vim shortcut</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/12/16/drawingIn30Days/">Process of learning <You Can Draw in 30 Days> by 'Mark Kistler'</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/12/14/swift/">Swift Learning</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/12/14/markdown/">Markdown Syntax</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-biao"> Tags</i></div><div class="tagcloud"><a href="/tags/Angularjs/" style="font-size: 15px;">Angularjs</a> <a href="/tags/Drawing/" style="font-size: 15px;">Drawing</a> <a href="/tags/ios/" style="font-size: 15px;">ios</a> <a href="/tags/JavaScript/" style="font-size: 15px;">JavaScript</a> <a href="/tags/Markdown/" style="font-size: 15px;">Markdown</a> <a href="/tags/Swift/" style="font-size: 15px;">Swift</a> <a href="/tags/Vim/" style="font-size: 15px;">Vim</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-archive"> Archive</i></div><ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-you"> Blogroll</i></div><ul></ul><a href="null" title="null" target="_blank"></a><ul></ul><a href="null" title="null" target="_blank"></a><ul></ul><a href="null" title="null" target="_blank"></a></div></div></div></div><a id="totop" href="#top"></a><div id="footer"><div class="footer-info"><p><a href="/baidusitemap.xml">Baidu Site Haritası</a> |  <a href="/atom.xml">RSS</a> |  <a href="/about/">About</a></p><p>本站总访问量：<i id="busuanzi_container_site_pv"><i id="busuanzi_value_site_pv"></i></i>次</p><p><span> Copyright &copy;<a href="/." rel="nofollow">Xi Cheng.</a></span><span> Theme by<a rel="nofollow" target="_blank" href="https://github.com/chaooo/hexo-theme-BlueLake"> BlueLake.</a></span><span> Count by<a href="http://busuanzi.ibruce.info/"> busuanzi.</a></span><span> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a></span></p></div></div></div><script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" async></script><script type="text/javascript" src="/js/toctotop.js?v=2.0.1" async></script><script>var disqus_shortname = 'xi-cheng';
+</li>
+</ul>
+</div><div class="tags"><a href="/tags/ios/">ios</a></div><div class="post-share"></div><div class="post-nav"><a href="/2017/12/27/jsSugar/" class="pre">JavaScript Syntax Sugar</a><a href="/2017/12/18/angularjs/" class="next">Angularjs Learning</a></div><div id="comments"><div id="disqus_thread"></div></div></div></div></div><div class="layout-r"><div id="sidebar"><div class="widget"><div class="widget-title"><i class="fa fa-xie"> Recent</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/12/27/jsSugar/">JavaScript Syntax Sugar</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/12/20/ios/">ios learning</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/12/18/angularjs/">Angularjs Learning</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/12/18/vimShortcut/">Vim shortcut</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/12/16/drawingIn30Days/">Process of learning <You Can Draw in 30 Days> by 'Mark Kistler'</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/12/14/swift/">Swift Learning</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/12/14/markdown/">Markdown Syntax</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-biao"> Tags</i></div><div class="tagcloud"><a href="/tags/Angularjs/" style="font-size: 15px;">Angularjs</a> <a href="/tags/Drawing/" style="font-size: 15px;">Drawing</a> <a href="/tags/ios/" style="font-size: 15px;">ios</a> <a href="/tags/JavaScript/" style="font-size: 15px;">JavaScript</a> <a href="/tags/Markdown/" style="font-size: 15px;">Markdown</a> <a href="/tags/Vim/" style="font-size: 15px;">Vim</a> <a href="/tags/Swift/" style="font-size: 15px;">Swift</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-archive"> Archive</i></div><ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-you"> Blogroll</i></div><ul></ul><a href="null" title="null" target="_blank"></a><ul></ul><a href="null" title="null" target="_blank"></a><ul></ul><a href="null" title="null" target="_blank"></a></div></div></div></div><a id="totop" href="#top"></a><div id="footer"><div class="footer-info"><p><a href="/baidusitemap.xml">Baidu Site Haritası</a> |  <a href="/atom.xml">RSS</a> |  <a href="/about/">About</a></p><p>本站总访问量：<i id="busuanzi_container_site_pv"><i id="busuanzi_value_site_pv"></i></i>次</p><p><span> Copyright &copy;<a href="/." rel="nofollow">Xi Cheng.</a></span><span> Theme by<a rel="nofollow" target="_blank" href="https://github.com/chaooo/hexo-theme-BlueLake"> BlueLake.</a></span><span> Count by<a href="http://busuanzi.ibruce.info/"> busuanzi.</a></span><span> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a></span></p></div></div></div><script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" async></script><script type="text/javascript" src="/js/toctotop.js?v=2.0.1" async></script><script>var disqus_shortname = 'xi-cheng';
 var disqus_identifier = '2017/12/20/ios/';
 var disqus_title = 'ios learning';
 var disqus_url = 'http://channing-cheng.github.io/2017/12/20/ios/';

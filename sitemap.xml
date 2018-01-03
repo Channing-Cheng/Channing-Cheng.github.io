@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://channing-cheng.github.io/2017/12/16/drawingIn30Days/</loc>
+    
+    <lastmod>2018-01-03T12:15:33.832Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://channing-cheng.github.io/2017/12/20/ios/</loc>
     
-    <lastmod>2017-12-31T13:25:49.657Z</lastmod>
+    <lastmod>2018-01-03T07:27:00.462Z</lastmod>
     
   </url>
   
@@ -26,13 +33,6 @@
     <loc>http://channing-cheng.github.io/2017/12/18/angularjs/</loc>
     
     <lastmod>2017-12-24T23:56:13.406Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://channing-cheng.github.io/2017/12/16/drawingIn30Days/</loc>
-    
-    <lastmod>2017-12-18T13:15:25.424Z</lastmod>
     
   </url>
   
