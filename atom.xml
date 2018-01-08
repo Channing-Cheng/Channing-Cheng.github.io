@@ -48,7 +48,7 @@
     <link href="http://channing-cheng.github.io/2017/12/20/ios/"/>
     <id>http://channing-cheng.github.io/2017/12/20/ios/</id>
     <published>2017-12-20T05:17:14.000Z</published>
-    <updated>2018-01-03T07:27:00.462Z</updated>
+    <updated>2018-01-08T06:23:31.019Z</updated>
     
     <summary type="html">
     
@@ -56,7 +56,8 @@
       
         
         
-          &lt;h2 id=&quot;Image-Fill-Mode&quot;&gt;&lt;a href=&quot;#Image-Fill-Mode&quot; class=&quot;headerlink&quot; title=&quot;Image Fill Mode&quot;&gt;&lt;/a&gt;Image Fill Mode&lt;/h2&gt;&lt;p&gt;&lt;img
+          &lt;h2 id=&quot;Syntax-Sugar&quot;&gt;&lt;a href=&quot;#Syntax-Sugar&quot; class=&quot;headerlink&quot; title=&quot;Syntax Sugar&quot;&gt;&lt;/a&gt;Syntax Sugar&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;image name directly is
         
       
     
@@ -121,7 +122,7 @@
     <link href="http://channing-cheng.github.io/2017/12/16/drawingIn30Days/"/>
     <id>http://channing-cheng.github.io/2017/12/16/drawingIn30Days/</id>
     <published>2017-12-16T09:00:30.000Z</published>
-    <updated>2018-01-04T07:53:11.199Z</updated>
+    <updated>2018-01-04T23:31:35.292Z</updated>
     
     <summary type="html">
     
@@ -171,7 +172,7 @@
     <link href="http://channing-cheng.github.io/2017/12/14/markdown/"/>
     <id>http://channing-cheng.github.io/2017/12/14/markdown/</id>
     <published>2017-12-14T03:11:00.000Z</published>
-    <updated>2017-12-18T08:10:56.801Z</updated>
+    <updated>2018-01-08T06:21:57.358Z</updated>
     
     <summary type="html">
     
@@ -179,7 +180,8 @@
       
         
         
-          &lt;h2 id=&quot;Basic-Syntax&quot;&gt;&lt;a href=&quot;#Basic-Syntax&quot; class=&quot;headerlink&quot; title=&quot;Basic Syntax&quot;&gt;&lt;/a&gt;Basic Syntax&lt;/h2&gt;&lt;h3 id=&quot;Emphasis&quot;&gt;&lt;a
+          &lt;h2 id=&quot;Emphasis&quot;&gt;&lt;a href=&quot;#Emphasis&quot; class=&quot;headerlink&quot; title=&quot;Emphasis&quot;&gt;&lt;/a&gt;Emphasis&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;*Italics* OR
         
       
     
