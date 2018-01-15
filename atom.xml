@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://channing-cheng.github.io/"/>
-  <updated>2017-12-26T22:47:52.320Z</updated>
+  <updated>2018-01-15T03:24:24.447Z</updated>
   <id>http://channing-cheng.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CSS</title>
+    <link href="http://channing-cheng.github.io/2018/01/15/css/"/>
+    <id>http://channing-cheng.github.io/2018/01/15/css/</id>
+    <published>2018-01-15T03:11:19.000Z</published>
+    <updated>2018-01-15T03:24:24.447Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Property&quot;&gt;&lt;a href=&quot;#Property&quot; class=&quot;headerlink&quot; title=&quot;Property&quot;&gt;&lt;/a&gt;Property&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;position&lt;ul&gt;
+&lt;li&gt;static: Default value.
+        
+      
+    
+    </summary>
+    
+    
+      <category term="css" scheme="http://channing-cheng.github.io/tags/css/"/>
+    
+  </entry>
   
   <entry>
     <title>JavaScript Syntax Sugar</title>
@@ -48,7 +74,7 @@
     <link href="http://channing-cheng.github.io/2017/12/20/ios/"/>
     <id>http://channing-cheng.github.io/2017/12/20/ios/</id>
     <published>2017-12-20T05:17:14.000Z</published>
-    <updated>2018-01-08T06:24:24.276Z</updated>
+    <updated>2018-01-11T02:47:59.760Z</updated>
     
     <summary type="html">
     
@@ -97,7 +123,7 @@
     <link href="http://channing-cheng.github.io/2017/12/18/vimShortcut/"/>
     <id>http://channing-cheng.github.io/2017/12/18/vimShortcut/</id>
     <published>2017-12-18T08:11:46.000Z</published>
-    <updated>2017-12-18T08:36:48.485Z</updated>
+    <updated>2018-01-09T00:22:36.148Z</updated>
     
     <summary type="html">
     
@@ -122,7 +148,7 @@
     <link href="http://channing-cheng.github.io/2017/12/16/drawingIn30Days/"/>
     <id>http://channing-cheng.github.io/2017/12/16/drawingIn30Days/</id>
     <published>2017-12-16T09:00:30.000Z</published>
-    <updated>2018-01-04T23:31:35.292Z</updated>
+    <updated>2018-01-14T20:10:09.977Z</updated>
     
     <summary type="html">
     
